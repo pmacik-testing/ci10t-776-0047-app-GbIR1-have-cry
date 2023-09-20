@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wyhf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0047-tenant/ci10t-776-0047-app/devfile-sample-wyhf@sha256:d4e35f3f4b4e8c0689e7a3ba63588a5f0884c7cb05fc26637db73743af87a8bc
+        name: my-nodejs
+        resources: {}
+status: {}
